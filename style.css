@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", monospace;
+}
+
+.main {
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main .image-container {
+    padding: 10px;
+}
+
+.main .image-container .image {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main .image-container .image img {
+    width: 350px;
+    height: auto;
+}
+
+.main .image-container .image img[src="JarvisSide.gif"] {
+    width: 150px;
+    align-items: first baseline;
+}
+
+.main .image-container .image img[src="giphy.gif"] {
+    width: 350px;
+    align-items: center;
+}
+
+.main .image-container h1 {
+    color: #00bcd4;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+.main .image-container p {
+    color: #324042;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.main .input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    height: 50px;
+    border-radius: 20px;
+    background: rgb(202 253 255 / 50%);
+}
+
+.main .input .talk {
+    background: transparent;
+    outline: none;
+    border: none;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.main .input .talk i {
+    font-size: 20px;
+    color: #aed0d0;
+}
+
+.main .input .content {
+    color: #aed0d0;
+    font-size: 15px;
+    margin-right: 20px;
+}
+
+.top-left-text {
+    position: absolute;
+    top: 20px;
+    left: 400px;
+    color: rgb(81, 164, 81);
+    font-size: 8px;
+    max-width: 300px;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.middle-left-text {
+    position: absolute;
+    top: 35%;
+    left: 350px;
+    color: rgb(81, 164, 81);
+    font-size: 8px;
+    max-width: 200px;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.bottom-left-number {
+    position: absolute;
+    bottom: 20px; /* Adjust as needed */
+    left: 20px; /* Adjust as needed */
+    color: rgb(81, 164, 81);
+    font-size: 12px; /* Adjust as needed */
+    max-width: 200px;
+    line-height: 1.2;
+    text-align: left;
+    z-index: 4; /* Ensure it's above other elements */
+}
+
+.middle-right-text{
+    position: absolute;
+    top: 50%; /* Adjust as needed */
+    right: 3%; /* Adjust as needed */
+    color: rgb(81, 164, 81);
+    font-size: 12px; /* Adjust as needed */
+    max-width: 200px;
+    line-height: 1.2;
+    text-align: left;
+    z-index: 4; /* Ensure it's above other elements */
+}
+.top-right-number {
+    position: absolute;
+    top: 10%;
+    right: 380px;
+    color: rgb(81, 164, 81);
+    max-width: 100px;
+    line-height: 1.2;
+    text-align: left;
+    font-size: 9px; 
+}
+
+.bottom-right-gif {
+    position: absolute;
+    bottom: 100px;
+    right: 60px;
+    width: 210px;
+    height: auto;
+    z-index: 3;
+}
+
+.top-left-gif {
+    position: absolute;
+    top: 3%;
+    left: 3%;
+    width: 300px;
+    height: auto;
+    z-index: 2;
+}
+
+.top-right-gif {
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    width: 320px;
+    height: auto;
+    z-index: 2;
+}
+
+.bottom-left-front-gif {
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    width: 250px;
+    height: auto;
+}
+
+.bottom-left-back-gif {
+    position: absolute;
+    bottom: 0%;
+    left: 75%;
+    width: 180px;
+    height: auto;
+    z-index: 0;
+}
+
+.bottom-left-new-gif {
+    position: absolute;
+    bottom: 30%;
+    left: 23%;
+    width: 200px;
+    height: auto;
+    z-index: 1;
+}
+
+.middle-right-gif {
+    position: absolute;
+    top: 60%;
+    right: 12%;
+    transform: translateY(-50%);
+    width: 300px;
+    height: auto;
+    z-index: 2;
+}
+
+.buttom-last-text {
+    position: absolute;
+    bottom: 5%;
+    right: 0%;
+    color: red;
+    width: 200px;
+    height: auto;
+    font-size: 9px;
+    border-right: .1em solid red;  /* Typing cursor */
+    white-space: nowrap;
+    overflow: hidden; 
+    animation: typing 2s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+.top-last-text {
+    position: absolute;
+    top: 20%;
+    left: 400px;
+    color: red;
+    font-size: 8px;
+    max-width: 150px;
+    line-height: 1.2;
+    text-align: left;
+    border-right: .1em solid red;  /* Typing cursor */
+    white-space: nowrap;
+    overflow: hidden; 
+    animation: typing 2s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: red; }
+}
